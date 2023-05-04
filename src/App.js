@@ -10,7 +10,7 @@ function App() {
             <span className="form__labelText">
               Great Britain Pound*
             </span>
-            <input placeholder="amount" className="form__field" type="number" required step="0.01" autofocus />
+            <input placeholder="amount" className="form__field" type="number" required step="0.01" autoFocus />
           </label>
         </p>
         <p>
