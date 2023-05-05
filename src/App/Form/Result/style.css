@@ -1,0 +1,13 @@
+.result__container {
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: -7px 7px 5px hsl(0, 0%, 25%);
+}
+
+.form__result {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
