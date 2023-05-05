@@ -18,3 +18,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 1220px) {
+  body {
+    background-size: 1220px auto;
+  }
+}

@@ -1,6 +1,6 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-// import { Form } from './Form';
+import { Form } from './Form';
 import { curriencies } from './curriencies';
 
 function App() {

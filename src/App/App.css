@@ -1,8 +1,22 @@
 .app {
-    flex-basis: 700px;
+    flex-basis: 600px;
     margin: 20px;
-    padding: 40px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 30px black;
+    padding: 5px 40px;
+    border-radius: 10px;
+    box-shadow: -35px 35px 25px black;
+    background: linear-gradient(to right, #ffffca, #ffff89, #ffffca, #ffff89, #ffffca);
+    background-size: 200% 100%;
+    width: 550px;
+    min-height: 400px;
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 300% 0;
+    }
 }
