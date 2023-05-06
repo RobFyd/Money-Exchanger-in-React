@@ -14,7 +14,7 @@ function App() {
 
         setResult({
             sourceAmount: +amount,
-            targetAmount: amount / rate,
+            targetAmount: amount * rate,
             currency,
         });
     }
