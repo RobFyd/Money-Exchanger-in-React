@@ -6,11 +6,13 @@ export const Result = ({ result }) => (
         <p className="form__result">
             {result !== undefined && (
                 <>
-                {result.sourceAmount.toFixed(2)}&nbsp;GBP&nbsp;=&nbsp;{" "}
-
-                <strong>
-                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
-                </strong>
+                    <span>
+                        {result.sourceAmount.toFixed(2)}&nbsp;GBP&nbsp;=
+                        {" "}
+                        <strong>
+                            {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                        </strong>
+                    </span>
                 </>
             )}
         </p>

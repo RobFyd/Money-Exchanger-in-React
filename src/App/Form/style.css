@@ -1,0 +1,92 @@
+.form__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.form__label {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 580px) {
+    .form__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.form__labelText {
+    display: inline-block;
+    width: 200px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.form__field {
+    border: 2px solid black;
+    padding: 10px;
+    width: 250px;
+    border-radius: 3px;
+    box-shadow: -7px 7px 5px hsl(0, 0%, 25%);
+}
+
+@media (max-width: 580px) {
+    .form__field {
+        width: 100%;
+    }
+}
+
+.form__field:hover {
+    cursor: pointer;
+    background-color: #ffffca;
+}
+
+.form__currency {
+    border: 2px solid black;
+    padding: 10px;
+    width: 250px;
+    border-radius: 3px;
+    box-shadow: -7px 7px 5px hsl(0, 0%, 25%);
+}
+
+@media (max-width: 580px) {
+    .form__currency {
+        width: 100%;
+    }
+}
+
+.form__currency:hover {
+    cursor: pointer;
+    background-color: #ffffca;
+}
+
+.form__button {
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: -7px 7px 5px hsl(0, 0%, 25%);
+}
+
+.form__button:hover {
+    cursor: pointer;
+    background-color: #ffffca;
+}
+
+.form__button:active {
+    background-color: #ffff89;
+}
+
+.form__info {
+    margin-top: 30px;
+    line-height: 1;
+}

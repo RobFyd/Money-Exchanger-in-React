@@ -60,7 +60,7 @@ export const Form = ({ calculateResult, result }) => {
             <Result result={result} />
             <div className="form__info">
                 <p>Currency rates come from the Western Union website as of April 30, 2023</p>
-                <p>*The field with a star (*) symbol must be completed</p>
+                <p>*The field with a star symbol must be completed</p>
             </div>
         </form>
     )

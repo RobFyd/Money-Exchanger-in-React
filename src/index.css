@@ -15,8 +15,8 @@ body {
   padding: 15px;
   line-height: 1.6;
   background-image: url("../public/notes.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 @media (max-width: 1220px) {
