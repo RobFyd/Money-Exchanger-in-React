@@ -31,7 +31,7 @@ If you want to learn more and test the functionality of my tool, click below:
 
 👇
 
-[Currency Converter in React](https://robfyd.github.io/Money-Exchanger-in-React/)
+[Money Exchanger in React](https://robfyd.github.io/Money-Exchanger-in-React/)
 
 
 ```javascript
