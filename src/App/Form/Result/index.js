@@ -3,7 +3,7 @@ import "./style.css";
 
 export const Result = ({ result }) => (
     <div className="result__container">
-        <p className="form__result">
+        <p className="form__result">Result:{" "}
             {result !== undefined && (
                 <>
                     <span>
