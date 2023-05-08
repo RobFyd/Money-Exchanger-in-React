@@ -6,7 +6,7 @@ The next stage in which the Money Exchanger tool was moved to React.js. I create
 
 ### Demo
 
-![Money Exchanger in React](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/public/exchangerNewGif.gif)
+![Money Exchanger in React](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/exchangerNewGif.gif?raw=true)
 
 My Money Exchanger tool in React contains:
 
