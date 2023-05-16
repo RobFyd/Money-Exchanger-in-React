@@ -18,7 +18,7 @@ export const Form = ({ calculateResult, result }) => {
             <p>
                 <label className="form__label">
                     <span className="form__labelText">
-                    Exchanged amount* in Great Britain Pound
+                        Exchanged amount* in Great Britain Pound
                     </span>
                     <input
                         value={amount}
@@ -28,14 +28,13 @@ export const Form = ({ calculateResult, result }) => {
                         type="number"
                         required
                         step="0.01"
-                        autoFocus
                     />
                 </label>
             </p>
             <p>
                 <label className="form__label">
                     <span className="form__labelText">
-                    Chosen currency
+                        Chosen currency
                     </span>
                     <select
                         className="form__currency"
