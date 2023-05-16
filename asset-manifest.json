@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Money-Exchanger-in-React/static/css/main.524ecf41.css",
+    "main.css": "/Money-Exchanger-in-React/static/css/main.56b38c82.css",
     "main.js": "/Money-Exchanger-in-React/static/js/main.4547a32a.js",
     "static/js/787.467b34f7.chunk.js": "/Money-Exchanger-in-React/static/js/787.467b34f7.chunk.js",
     "static/media/notes.jpg": "/Money-Exchanger-in-React/static/media/notes.f137e9e60df605503038.jpg",
     "index.html": "/Money-Exchanger-in-React/index.html",
-    "main.524ecf41.css.map": "/Money-Exchanger-in-React/static/css/main.524ecf41.css.map",
+    "main.56b38c82.css.map": "/Money-Exchanger-in-React/static/css/main.56b38c82.css.map",
     "main.4547a32a.js.map": "/Money-Exchanger-in-React/static/js/main.4547a32a.js.map",
     "787.467b34f7.chunk.js.map": "/Money-Exchanger-in-React/static/js/787.467b34f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.524ecf41.css",
+    "static/css/main.56b38c82.css",
     "static/js/main.4547a32a.js"
   ]
 }
