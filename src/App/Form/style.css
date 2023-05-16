@@ -87,6 +87,7 @@
 }
 
 .form__info {
-    margin-top: 30px;
+    margin-top: 35px;
     line-height: 1;
+    font-style: italic;
 }
