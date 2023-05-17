@@ -18,7 +18,7 @@ export const Form = ({ calculateResult, result }) => {
             <p>
                 <label className="form__label">
                     <span className="form__labelText">
-                        Exchanged amount* in Great Britain Pound
+                        Exchanged amount in Great Britain Pound*
                     </span>
                     <input
                         value={amount}
