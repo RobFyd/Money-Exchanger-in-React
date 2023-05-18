@@ -7,7 +7,7 @@ const exchangerDate = (date) => date.toLocaleString("en-EN", {
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
-    // second: "numeric"
+    second: "numeric"
 });
 
 export const Clock = () => {
