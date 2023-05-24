@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./style.css";
 
-const exchangerDate = (date) => date.toLocaleString("en-EN", {
+const formatDate = (date) => date.toLocaleString("en-EN", {
     month: "long",
     weekday: "long",
     day: "numeric",
@@ -26,7 +26,7 @@ export const Clock = () => {
 
     return (
         <div className="exchangerClock">
-            Today is {exchangerDate(date)}
+            Today is {formatDate(date)}
         </div>
     )
 };
