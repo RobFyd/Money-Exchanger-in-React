@@ -19,9 +19,10 @@ My Money Exchanger tool in React contains:
 - HTML
 - BEM convention
 - CSS
+- Styled Components
 - Flex
 - Grid
-- querySelector
+- QuerySelector
 
 My logo:
 
