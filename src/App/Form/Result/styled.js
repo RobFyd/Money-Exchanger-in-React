@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ResultContainer = styled.div`
   width: 100%;
   border: 2px solid black;
   background-color: white;

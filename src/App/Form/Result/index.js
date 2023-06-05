@@ -1,7 +1,7 @@
-import { Container, Outcome } from "./styled.js";
+import { ResultContainer, Outcome } from "./styled.js";
 
 export const Result = ({ result }) => (
-  <Container>
+  <ResultContainer>
     <Outcome>
       Result:{" "}
       {result !== undefined && (
@@ -15,5 +15,5 @@ export const Result = ({ result }) => (
         </>
       )}
     </Outcome>
-  </Container>
+  </ResultContainer>
 );
