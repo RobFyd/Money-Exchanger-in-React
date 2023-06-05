@@ -27,7 +27,7 @@ export const Title = styled.span`
 `;
 
 export const AmountField = styled.input`
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 10px;
   width: 250px;
   border-radius: 3px;
@@ -44,7 +44,7 @@ export const AmountField = styled.input`
 `;
 
 export const Select = styled.select`
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 10px;
   width: 250px;
   border-radius: 3px;
@@ -62,7 +62,7 @@ export const Select = styled.select`
 
 export const Button = styled.button`
   width: 100%;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;
   color: black;
   padding: 12px;
