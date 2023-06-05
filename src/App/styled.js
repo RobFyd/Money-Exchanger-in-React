@@ -5,7 +5,6 @@ export const AppBody = styled.div`
   margin: 20px;
   padding: 5px 40px;
   border-radius: 10px;
-  /* box-shadow: -35px 35px 25px black; */
   box-shadow: -14.4px 14.4px 44.3px rgba(0, 0, 0, 0.297),
     -25.8px 25.8px 54.9px rgba(0, 0, 0, 0.364),
     -40.9px 40.9px 63.9px rgba(0, 0, 0, 0.402),
