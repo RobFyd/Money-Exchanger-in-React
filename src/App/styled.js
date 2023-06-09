@@ -12,11 +12,11 @@ export const AppBody = styled.div`
     -81px 81px 81px rgba(0, 0, 0, 0.44);
   background: linear-gradient(
     to right,
-    #ffffca,
-    #ffff89,
-    #ffffca,
-    #ffff89,
-    #ffffca
+    ${({ theme }) => theme.cream},
+    ${({ theme }) => theme.dolly},
+    ${({ theme }) => theme.cream},
+    ${({ theme }) => theme.dolly},
+    ${({ theme }) => theme.cream}
   );
   background-size: 200% 100%;
   max-width: 550px;

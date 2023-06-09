@@ -11,7 +11,7 @@ export const Label = styled.label`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 580px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@ export const Title = styled.span`
 `;
 
 export const AmountField = styled.input`
-  border: 1px solid black;
+  border: 1px solid ${({ theme }) => theme.black};
   padding: 10px;
   width: 250px;
   border-radius: 3px;
@@ -35,16 +35,16 @@ export const AmountField = styled.input`
 
   &:hover {
     cursor: pointer;
-    background-color: #ffffca;
+    background-color: ${({ theme }) => theme.cream};
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     width: 100%;
   }
 `;
 
 export const Select = styled.select`
-  border: 1px solid black;
+  border: 1px solid ${({ theme }) => theme.black};
   padding: 10px;
   width: 250px;
   border-radius: 3px;
@@ -52,19 +52,19 @@ export const Select = styled.select`
 
   &:hover {
     cursor: pointer;
-    background-color: #ffffca;
+    background-color: ${({ theme }) => theme.cream};
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     width: 100%;
   }
 `;
 
 export const Button = styled.button`
   width: 100%;
-  border: 1px solid black;
-  background-color: white;
-  color: black;
+  border: 1px solid ${({ theme }) => theme.black};
+  background-color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.black};
   padding: 12px;
   border-radius: 3px;
   font-weight: bold;
@@ -73,11 +73,11 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: #ffffca;
+    background-color: ${({ theme }) => theme.cream};
   }
 
   &:active {
-    background-color: #ffff89;
+    background-color: ${({ theme }) => theme.dolly};
   }
 `;
 
