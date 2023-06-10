@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Form } from "./Form";
 import { Clock } from "./Clock";
 import { curriencies } from "./curriencies";
-import { AppBody } from "./styled.js";
+import { AppBody, Header } from "./styled.js";
 
 function App() {
   const [result, setResult] = useState();
@@ -20,6 +20,7 @@ function App() {
   return (
     <AppBody>
       <Clock />
+      <Header>Money Exchanger</Header>
       <Form result={result} calculateResult={calculateResult} />
     </AppBody>
   );

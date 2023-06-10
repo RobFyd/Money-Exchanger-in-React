@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Header = styled.h1`
-  display: flex;
-  justify-content: center;
-  padding-bottom: 15px;
-  font-size: 40px;
-`;
-
 export const Label = styled.label`
   display: flex;
   justify-content: space-between;

@@ -1,5 +1,5 @@
 import { useCurrentDate } from "./useCurrentDate";
-import { AppClock } from "./styled.js";
+import { StyledClock } from "./styled.js";
 
 const Clock = () => {
   const { date } = useCurrentDate();
@@ -13,7 +13,7 @@ const Clock = () => {
     second: "numeric",
   });
 
-  return <AppClock>Today is {formatDate}</AppClock>;
+  return <StyledClock>Today is {formatDate}</StyledClock>;
 };
 
 export { Clock };

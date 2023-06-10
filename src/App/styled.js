@@ -33,3 +33,10 @@ export const AppBody = styled.div`
     }
   }
 `;
+
+export const Header = styled.h1`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  font-size: 40px;
+`;

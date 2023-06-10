@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AppClock = styled.div`
+export const StyledClock = styled.div`
   display: flex;
   flex-direction: row-reverse;
   margin-top: 5px;

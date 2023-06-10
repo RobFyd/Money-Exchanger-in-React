@@ -1,15 +1,7 @@
 import { useState } from "react";
 import { curriencies } from "../curriencies";
 import { Result } from "./Result";
-import {
-  Header,
-  Label,
-  Title,
-  AmountField,
-  Select,
-  Button,
-  Info,
-} from "./styled.js";
+import { Label, Title, AmountField, Select, Button, Info } from "./styled.js";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(curriencies[0].short);
@@ -22,7 +14,6 @@ export const Form = ({ calculateResult, result }) => {
 
   return (
     <form onSubmit={onSubmit}>
-      <Header>Money Exchanger</Header>
       <p>
         <Label>
           <Title>Exchanged amount in Great Britain Pound*</Title>
