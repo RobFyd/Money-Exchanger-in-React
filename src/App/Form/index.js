@@ -2,10 +2,23 @@ import { useState } from "react";
 // import { curriencies } from "../curriencies";
 import { Result } from "./Result";
 import { Label, Title, AmountField, Select, Button, Info } from "./styled.js";
+import { useRateData } from "./useRateData";
 
-export const Form = ({ calculateResult, result }) => {
+export const Form = () => {
   const [currency, setCurrency] = useState(curriencies[0].short);
   const [amount, setAmount] = useState("");
+  const [result, setResult] = useState(null);
+  const rateData = useRateData();
+
+  const calculateResult = (amount, currency) => {
+    const rate = rateData.rates[currency];
+
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount * rate,
+      currency,
+    });
+  };
 
   const onSubmit = (event) => {
     event.preventDefault();
