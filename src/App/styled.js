@@ -19,7 +19,7 @@ export const AppBody = styled.div`
     ${({ theme }) => theme.cream}
   );
   background-size: 200% 100%;
-  max-width: 550px;
+  max-width: 580px;
   min-height: 400px;
   animation: wave 5s linear infinite;
 

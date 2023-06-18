@@ -79,3 +79,11 @@ export const Info = styled.div`
   line-height: 1;
   font-style: italic;
 `;
+
+export const Loading = styled.p`
+  color: ${({ theme }) => theme.black};
+`;
+
+export const Error = styled.p`
+  color: ${({ theme }) => theme.red};
+`;

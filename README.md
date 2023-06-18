@@ -1,6 +1,6 @@
 # **Money Exchanger in React.js**
 
-## *Description*
+## _Description_
 
 The next stage in which the Money Exchanger tool was moved to React.js. I created it as part of the "Frontend developer from scratch" course. Below is a demo of the project. The tool is still being improved.
 
@@ -16,6 +16,9 @@ My Money Exchanger tool in React contains:
 - Webpack
 - Node.js
 - Immutability
+- setTimeout, setInterval
+- Custom Hooks
+- Axios
 - HTML
 - BEM convention
 - CSS
@@ -34,10 +37,9 @@ If you want to learn more and test the functionality of my tool, click below:
 
 [Money Exchanger in React](https://robfyd.github.io/Money-Exchanger-in-React/)
 
-
 ```javascript
 let x = "love coding";
-console.log(x+" :)");
+console.log(x + " :)");
 ```
 
 ## Getting Started with Create React App
