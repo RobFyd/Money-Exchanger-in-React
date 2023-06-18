@@ -5,9 +5,9 @@ import { Label, Title, AmountField, Select, Button, Info } from "./styled.js";
 import { useRateData } from "./useRateData";
 
 export const Form = () => {
-  const [currency, setCurrency] = useState(curriencies[0].short);
+  const [currency, setCurrency] = useState("PLN");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState();  // null deleted
   const rateData = useRateData();
 
   const calculateResult = (amount, currency) => {
@@ -48,7 +48,7 @@ export const Form = () => {
             onChange={({ target }) => setCurrency(target.value)}
             name="currency"
           >
-            {curriencies.map((currency) => (
+            {!!rateData.rates && Object.keys(rateData.rates).map((currency) => (
               <option key={currency.short} value={currency.short}>
                 {currency.name}
               </option>
