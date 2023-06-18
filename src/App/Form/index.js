@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { curriencies } from "../curriencies";
+// import { curriencies } from "../curriencies";
 import { Result } from "./Result";
 import { Label, Title, AmountField, Select, Button, Info } from "./styled.js";
 
