@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Form } from "./Form";
 import { Clock } from "./Clock";
 import { curriencies } from "./curriencies";
-import { AppBody, Header } from "./styled.js";
+import { AppBody } from "./styled.js";
+import { Header } from "./styled.js";
 
 function App() {
   const [result, setResult] = useState();
