@@ -1,14 +1,22 @@
 import { useState } from "react";
-// import { curriencies } from "../curriencies";
 import { Result } from "./Result";
-import { Label, Title, AmountField, Select, Button, Info } from "./styled.js";
-import { useRateData } from "./useRateData";
+import {
+  Label,
+  Title,
+  AmountField,
+  Select,
+  Button,
+  Info,
+  Loading,
+  Error,
+} from "./styled.js";
+import { useRatesData } from "./useRatesData";
 
 export const Form = () => {
   const [currency, setCurrency] = useState("PLN");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState();  // null deleted
-  const rateData = useRateData();
+  const [result, setResult] = useState(); // null deleted
+  const rateData = useRatesData();
 
   const calculateResult = (amount, currency) => {
     const rate = rateData.rates[currency];
@@ -48,11 +56,12 @@ export const Form = () => {
             onChange={({ target }) => setCurrency(target.value)}
             name="currency"
           >
-            {!!rateData.rates && Object.keys(rateData.rates).map((currency) => (
-              <option key={currency.short} value={currency.short}>
-                {currency.name}
-              </option>
-            ))}
+            {!!rateData.rates &&
+              Object.keys(rateData.rates).map((currency) => (
+                <option key={currency} value={currency}>
+                  {currency}
+                </option>
+              ))}
           </Select>
         </Label>
       </p>

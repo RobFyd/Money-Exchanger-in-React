@@ -3,8 +3,8 @@ import axios from "axios";
 
 var requestURL = "https://api.exchangerate.host/latest?base=GBP";
 
-export const useRateData = () => {
-  const [rateData, setRateData] = useState({
+export const useRatesData = () => {
+  const [ratesData, setRatesData] = useState({
     status: "running",
   });
 
@@ -12,15 +12,15 @@ export const useRateData = () => {
     const fetchRateData = async () => {
       try {
         const response = await axios.get(requestURL);
-        const { rate, date } = response.data;
+        const { rates, date } = response.data;
 
-        setRateData({
+        setRatesData({
           status: "success",
-          rate,
+          rates,
           date,
         });
       } catch {
-        setRateData({
+        setRatesData({
           status: "error",
         });
       }
@@ -29,5 +29,5 @@ export const useRateData = () => {
     setTimeout(fetchRateData, 2000);
   }, []);
 
-  return rateData;
+  return ratesData;
 };

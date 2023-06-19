@@ -6,18 +6,6 @@ import { AppBody } from "./styled.js";
 import { Header } from "./styled.js";
 
 function App() {
-  // const [result, setResult] = useState();
-
-  // const calculateResult = (currency, amount) => {
-  //   const rate = curriencies.find(({ short }) => short === currency).rate;
-
-  //   setResult({
-  //     sourceAmount: +amount,
-  //     targetAmount: amount * rate,
-  //     currency,
-  //   });
-  // };
-
   return (
     <AppBody>
       <Clock />
