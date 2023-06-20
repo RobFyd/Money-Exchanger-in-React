@@ -4,7 +4,7 @@ export const Result = ({ result }) => (
   <ResultContainer>
     <Outcome>
       Result:{" "}
-      {result !== undefined && (
+      {result !== null && (
         <>
           <span>
             {result.sourceAmount.toFixed(2)}&nbsp;GBP&nbsp;={" "}

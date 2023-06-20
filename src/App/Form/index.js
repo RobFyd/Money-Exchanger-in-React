@@ -15,11 +15,11 @@ import { useRatesData } from "./useRatesData";
 export const Form = () => {
   const [currency, setCurrency] = useState("PLN");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState(); // null deleted
-  const rateData = useRatesData();
+  const [result, setResult] = useState(null);
+  const ratesData = useRatesData();
 
   const calculateResult = (amount, currency) => {
-    const rate = rateData.rates[currency];
+    const rate = ratesData.rates[currency];
 
     setResult({
       sourceAmount: +amount,
@@ -28,21 +28,20 @@ export const Form = () => {
     });
   };
 
-  const onSubmit = (event) => {
+  const onFormSubmit = (event) => {
     event.preventDefault();
-    calculateResult(currency, amount);
+    calculateResult(amount, currency);
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      {rateData.status === "running" ? (
+    <form onSubmit={onFormSubmit}>
+      {ratesData.status === "running" ? (
         <Loading>
           Wait a second... <br /> Loding in progress...
         </Loading>
-      ) : rateData.status === "error" ? (
+      ) : ratesData.status === "error" ? (
         <Error>
-          TRY <br /> <br />{" "}
-          TRY
+          TRY <br /> <br /> TRY
         </Error>
       ) : (
         <>
@@ -55,7 +54,7 @@ export const Form = () => {
                 placeholder="amount"
                 type="number"
                 required
-                step="0.01"
+                step="0.1"
               />
             </Label>
           </p>
@@ -63,12 +62,13 @@ export const Form = () => {
             <Label>
               <Title>Chosen currency</Title>
               <Select
+                as="select"
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
                 name="currency"
               >
-                {!!rateData.rates &&
-                  Object.keys(rateData.rates).map((currency) => (
+                {!!ratesData.rates &&
+                  Object.keys(ratesData.rates).map((currency) => (
                     <option key={currency} value={currency}>
                       {currency}
                     </option>
