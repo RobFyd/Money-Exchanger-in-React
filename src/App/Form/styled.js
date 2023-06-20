@@ -80,8 +80,12 @@ export const Info = styled.div`
   font-style: italic;
 `;
 
-export const Loading = styled.p`
+export const Loading = styled.div`
   color: ${({ theme }) => theme.black};
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Error = styled.p`

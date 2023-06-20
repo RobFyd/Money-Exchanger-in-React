@@ -23,7 +23,7 @@ export const Form = () => {
 
     setResult({
       sourceAmount: +amount,
-      targetAmount: amount * rate,
+      targetAmount: +amount * rate,
       currency,
     });
   };
@@ -37,7 +37,8 @@ export const Form = () => {
     <form onSubmit={onFormSubmit}>
       {ratesData.status === "running" ? (
         <Loading>
-          Wait a second... <br /> Loding in progress...
+          <p>Wait a second...</p>
+          <p>Loding in progress...</p>
         </Loading>
       ) : ratesData.status === "error" ? (
         <Error>
@@ -81,11 +82,11 @@ export const Form = () => {
           </p>
           <Result result={result} />
           <Info>
-            <p>
-              Currency rates come from the Western Union website as of April 30,
-              2023
-            </p>
             <p>*The field with a star symbol must be completed</p>
+            <p>
+              Exchange rates come from <b>exchangerate.host</b> which offers
+              free currency exchange, cryptocurrency rates and EU VAT rates API
+            </p>
           </Info>
         </>
       )}
