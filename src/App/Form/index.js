@@ -38,16 +38,16 @@ export const Form = () => {
     <form onSubmit={onFormSubmit}>
       {ratesData.status === "running" ? (
         <>
-          <div>
-            <Loading>
-              <p>Wait a second...</p>
-              <p>Loding in progress...</p>
-            </Loading>
-            <Loader>
+          <Loading>
+            <p>Wait a second...</p>
+            <p>Loading in progress...</p>
+          </Loading>
+          <Loader>
+            <div className="load">
               <div className="a"></div>
               <div className="b"></div>
-            </Loader>
-          </div>
+            </div>
+          </Loader>
         </>
       ) : ratesData.status === "error" ? (
         <Error>

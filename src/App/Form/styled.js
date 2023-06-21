@@ -89,13 +89,16 @@ export const Loading = styled.div`
 `;
 
 export const Loader = styled.div`
-  display: inline-block;
-  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80px;
-  height: 80px;
+  justify-content: center;
+  margin-top: 16px;
+
+  .load {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
 
   .a {
     position: absolute;
@@ -104,6 +107,7 @@ export const Loader = styled.div`
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
+
   .b {
     animation-delay: -0.5s;
   }
