@@ -8,6 +8,7 @@ import {
   Button,
   Info,
   Loading,
+  Loader,
   Error,
 } from "./styled.js";
 import { useRatesData } from "./useRatesData";
@@ -36,10 +37,18 @@ export const Form = () => {
   return (
     <form onSubmit={onFormSubmit}>
       {ratesData.status === "running" ? (
-        <Loading>
-          <p>Wait a second...</p>
-          <p>Loding in progress...</p>
-        </Loading>
+        <>
+          <div>
+            <Loading>
+              <p>Wait a second...</p>
+              <p>Loding in progress...</p>
+            </Loading>
+            <Loader>
+              <div className="a"></div>
+              <div className="b"></div>
+            </Loader>
+          </div>
+        </>
       ) : ratesData.status === "error" ? (
         <Error>
           TRY <br /> <br /> TRY
