@@ -157,10 +157,11 @@ export const Error = styled.p`
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1;
   
 
   .icon {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 `;
