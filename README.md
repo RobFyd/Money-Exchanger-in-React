@@ -6,7 +6,7 @@ The next stage in which the Money Exchanger tool was moved to React.js. I create
 
 ### Demo
 
-![Money Exchanger in React](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/exchangerNewGif.gif?raw=true)
+![Money Exchanger in React](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/exchangerNewGif2.gif?raw=true)
 
 My Money Exchanger tool in React contains:
 
@@ -19,6 +19,7 @@ My Money Exchanger tool in React contains:
 - setTimeout, setInterval
 - Custom Hooks
 - Axios
+- Api
 - HTML
 - BEM convention
 - CSS
