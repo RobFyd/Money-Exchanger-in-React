@@ -51,7 +51,9 @@ export const Form = () => {
         </>
       ) : ratesData.status === "error" ? (
         <Error>
-          TRY <br /> <br /> TRY
+          <div className="icon">❌</div>
+          <p>Oops... something went wrong</p>
+          <p>Please check your internet connection, or try again later :)</p>
         </Error>
       ) : (
         <>

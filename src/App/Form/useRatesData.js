@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-var requestURL = "https://api.exchangerate.host/latest?base=GBP";
+var requestURL = "https://api.exchangerate.hos/latest?base=GBP";
 
 export const useRatesData = () => {
   const [ratesData, setRatesData] = useState({
@@ -26,7 +26,7 @@ export const useRatesData = () => {
       }
     };
 
-    setTimeout(fetchRateData, 112500);
+    setTimeout(fetchRateData, 2500);
   }, []);
 
   return ratesData;

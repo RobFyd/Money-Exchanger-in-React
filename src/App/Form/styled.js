@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Label = styled.label`
   display: flex;
@@ -86,6 +86,15 @@ export const Loading = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1;
+
+  /* ${({ StyledClock }) =>
+    StyledClock &&
+    css`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `} */
 `;
 
 export const Loader = styled.div`
@@ -144,5 +153,14 @@ export const Loader = styled.div`
 `;
 
 export const Error = styled.p`
-  color: ${({ theme }) => theme.red};
+  color: ${({ theme }) => theme.black};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
 `;
