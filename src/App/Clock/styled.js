@@ -6,10 +6,8 @@ export const StyledClock = styled.div`
   margin-top: 5px;
   font-style: italic;
 
-  @media (max-width: 400px) {
-    .x {
-      display: flex;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    display: flex;
     justify-content: center;
-    }
   }
 `;

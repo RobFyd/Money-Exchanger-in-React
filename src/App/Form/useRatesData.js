@@ -26,7 +26,7 @@ export const useRatesData = () => {
       }
     };
 
-    setTimeout(fetchRateData, 222500);
+    setTimeout(fetchRateData, 2500);
   }, []);
 
   return ratesData;

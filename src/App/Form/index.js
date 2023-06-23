@@ -67,6 +67,7 @@ export const Form = () => {
                 type="number"
                 required
                 step="0.1"
+                min={0}
               />
             </Label>
           </p>

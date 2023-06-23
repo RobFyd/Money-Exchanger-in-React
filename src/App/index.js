@@ -5,7 +5,7 @@ import { Header } from "./styled.js";
 
 function App() {
   return (
-    <AppBody className="x">
+    <AppBody>
       <Clock />
       <Header>Money Exchanger</Header>
       <Form />
