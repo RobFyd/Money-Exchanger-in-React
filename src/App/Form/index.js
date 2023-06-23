@@ -43,9 +43,9 @@ export const Form = () => {
             <p>Loading in progress...</p>
           </Loading>
           <Loader>
-            <div className="load">
-              <div className="a"></div>
-              <div className="b"></div>
+            <div className="load_0">
+              <div className="load_1"></div>
+              <div className="load_2"></div>
             </div>
           </Loader>
         </>

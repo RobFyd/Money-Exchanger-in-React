@@ -5,4 +5,11 @@ export const StyledClock = styled.div`
   flex-direction: row-reverse;
   margin-top: 5px;
   font-style: italic;
+
+  @media (max-width: 400px) {
+    .x {
+      display: flex;
+    justify-content: center;
+    }
+  }
 `;

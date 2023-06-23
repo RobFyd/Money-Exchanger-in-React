@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Label = styled.label`
   display: flex;
@@ -87,14 +87,6 @@ export const Loading = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 1;
-
-  /* ${({ StyledClock }) =>
-    StyledClock &&
-    css`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `} */
 `;
 
 export const Loader = styled.div`
@@ -102,14 +94,14 @@ export const Loader = styled.div`
   justify-content: center;
   margin-top: 16px;
 
-  .load {
+  .load_0 {
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
   }
 
-  .a {
+  .load_1 {
     position: absolute;
     border: 4px solid ${({ theme }) => theme.black};
     opacity: 1;
@@ -117,7 +109,7 @@ export const Loader = styled.div`
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
   }
 
-  .b {
+  .load_2 {
     animation-delay: -0.5s;
   }
   @keyframes lds-ripple {
