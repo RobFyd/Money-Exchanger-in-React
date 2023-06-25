@@ -145,7 +145,7 @@ export const Loader = styled.div`
 `;
 
 export const Error = styled.p`
-  color: ${({ theme }) => theme.black};
+  color: ${({ theme }) => theme.red};
   display: flex;
   flex-direction: column;
   align-items: center;

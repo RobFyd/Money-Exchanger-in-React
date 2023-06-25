@@ -36,7 +36,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={onFormSubmit}>
-      {ratesData.status === "running" ? (
+      {ratesData.state === "running" ? (
         <>
           <Loading>
             <p>Wait a second...</p>
@@ -49,7 +49,7 @@ export const Form = () => {
             </div>
           </Loader>
         </>
-      ) : ratesData.status === "error" ? (
+      ) : ratesData.state === "error" ? (
         <Error>
           <div className="icon">❌</div>
           <p>Oops... something went wrong</p>

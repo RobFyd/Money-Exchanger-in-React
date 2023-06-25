@@ -2,7 +2,7 @@
 
 ## _Description_
 
-The next stage in which the Money Exchanger tool was moved to React.js. I created it as part of the "Frontend developer from scratch" course. Below is a demo of the project. The tool is still being improved.
+The next stage in which the Money Exchanger tool was moved to React.js. I created it as part of the "Frontend developer from scratch" course. Currency values are taken from the open Api "exchangerate.host". Below is a demo of the project. The tool is still being improved.
 
 ### Demo
 
