@@ -9,15 +9,17 @@ export const useRatesData = () => {
   useEffect(() => {
     const fetchRateData = async () => {
       try {
-        const response = await axios.get("https://api.exchangerate.host/latest?base=GBP");
-        const { rates, date } = response.data;
+        const response = await axios.get(
+          "https://api.currencyapi.com/v3/latest?apikey=cur_live_WlbxoHy21n9fPcWpRcJCNXZzsijaRmOJujQZE9YK"
+        );
+        const { data } = response.data;
 
         setRatesData({
           state: "success",
-          rates,
-          date,
+          data,
         });
-      } catch {
+      } catch (error) {
+        console.error("error fetching data", error);
         setRatesData({
           state: "error",
         });
