@@ -20,13 +20,16 @@ export const Form = () => {
   const ratesData = useRatesData();
 
   const calculateResult = (amount, currency) => {
-    const rate = ratesData.rates[currency];
-
-    setResult({
-      sourceAmount: +amount,
-      targetAmount: +amount * rate,
-      currency,
-    });
+    try {
+      const rate = ratesData.rates[currency];
+      setResult({
+        sourceAmount: +amount,
+        targetAmount: +amount * rate,
+        currency,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const onFormSubmit = (event) => {
