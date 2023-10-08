@@ -100,8 +100,8 @@ export const Form = () => {
           <Info>
             <p>*The field with a star symbol must be completed</p>
             <p>
-              Exchange rates come from <b>exchangerate.host</b> which offers
-              free currency exchange, cryptocurrency rates and EU VAT rates API
+              Exchange rates come from <b>currencyapi.com</b> which offers
+              free currency exchange and historical foreign exchanges rates.
             </p>
           </Info>
         </>
