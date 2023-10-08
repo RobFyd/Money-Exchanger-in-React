@@ -10,7 +10,7 @@ export const useRatesData = () => {
     const fetchRateData = async () => {
       try {
         const response = await axios.get(
-          "https://api.currencyapi.com/v3/latest?apikey=cur_live_WlbxoHy21n9fPcWpRcJCNXZzsijaRmOJujQZE9YK"
+          "https://api.currencyapi.com/v3/latest?apikey=cur_live_WlbxoHy21n9fPcWpRcJCNXZzsijaRmOJujQZE9YK&base_currency=GBP"
         );
         const { data } = response.data;
 

@@ -14,14 +14,14 @@ import {
 import { useRatesData } from "./useRatesData";
 
 export const Form = () => {
-  const [currency, setCurrency] = useState("PLN");
+  const [currency, setCurrency] = useState("USD");
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState(null);
   const ratesData = useRatesData();
 
   const calculateResult = (amount, currency) => {
     try {
-      const rate = ratesData.rates[currency];
+      const rate = ratesData.data[currency].value;
       setResult({
         sourceAmount: +amount,
         targetAmount: +amount * rate,
@@ -64,6 +64,7 @@ export const Form = () => {
             <Label>
               <Title>Exchanged amount in Great Britain Pound*</Title>
               <AmountField
+                input
                 value={amount}
                 onChange={({ target }) => setAmount(target.value)}
                 placeholder="amount"
