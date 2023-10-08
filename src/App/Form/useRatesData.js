@@ -12,14 +12,15 @@ export const useRatesData = () => {
         const response = await axios.get(
           "https://api.currencyapi.com/v3/latest?apikey=cur_live_WlbxoHy21n9fPcWpRcJCNXZzsijaRmOJujQZE9YK&base_currency=GBP"
         );
-        const { data } = response.data;
+        const { data, meta } = response.data;
 
         setRatesData({
           state: "success",
           data,
+          meta,
         });
-      } catch (error) {
-        console.error("error fetching data", error);
+        
+      } catch {
         setRatesData({
           state: "error",
         });
