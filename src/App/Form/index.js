@@ -64,7 +64,8 @@ export const Form = () => {
             <Label>
               <Title>Exchanged amount in Great Britain Pound*</Title>
               <AmountField
-                input
+                name="amount"
+                as="input"
                 value={amount}
                 onChange={({ target }) => setAmount(target.value)}
                 placeholder="amount"
@@ -79,10 +80,10 @@ export const Form = () => {
             <Label>
               <Title>Chosen currency</Title>
               <Select
+                name="currency"
                 as="select"
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
-                name="currency"
               >
                 {Object.keys(ratesData.data).map((currency) => (
                   <option key={currency} value={currency}>
@@ -100,8 +101,8 @@ export const Form = () => {
           <Info>
             <p>*The field with a star symbol must be completed</p>
             <p>
-              Exchange rates come from <b>currencyapi.com</b> which offers
-              free currency exchange and historical foreign exchanges rates.
+              Exchange rates come from <b>currencyapi.com</b> which offers free
+              currency exchange and historical foreign exchanges rates.
             </p>
           </Info>
         </>
