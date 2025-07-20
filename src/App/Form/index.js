@@ -62,7 +62,7 @@ export const Form = () => {
         <>
           <p>
             <Label>
-              <Title>Exchanged amount in Great Britain Pound*</Title>
+              <Title>Amount in British Pounds*</Title>
               <AmountField
                 name="amount"
                 as="input"
