@@ -8,7 +8,9 @@ The next stage in which the Money Exchanger tool was moved to React.js. I create
 
 ![Money Exchanger in React](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/exchangerNewGif2.gif?raw=true)
 
-My Money Exchanger tool in React contains:
+### My Money Exchanger tool in React contains:
+
+![TechnologiesIcons](https://skillicons.dev/icons?i=html,css,js,react,git,nodejs,webpack,styledcomponents,figma,github,vscode)
 
 - JavaScript - ES6
 - React.js
@@ -28,7 +30,7 @@ My Money Exchanger tool in React contains:
 - Grid
 - QuerySelector
 
-My logo:
+## My logo:
 
 ![LOGO](https://github.com/RobFyd/Money-Exchanger-in-React/blob/main/public/RFLogo.png)
 
